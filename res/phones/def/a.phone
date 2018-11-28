@@ -1,0 +1,62 @@
+{"a": {
+                "u_lip_y" : {
+                     "start": 50,
+                     "end": 50
+                 },
+                 "l_lip_y" : {
+                     "start": 50,
+                     "end": 50
+                 },
+                 "l_puckering" : {
+                     "start": 0,
+                     "end": 0
+                 },
+                 "l_width" : {
+                     "start": 50,
+                     "end": 50
+                 },
+                 "l_jaw_x" : {
+                     "start": 50,
+                     "end": 50
+                 },
+                 "l_jaw_y" : {
+                     "start": 90,
+                     "end": 90
+                 },
+                 "t_apex_y" : {
+                     "start": 10,
+                     "end": 10
+                 },
+                 "t_dorsum_y" : {
+                     "start": 0,
+                     "end": 0
+                 },
+                 "t_foramen_y" : {
+                     "start": 10,
+                     "end": 10
+                 },
+                 "t_lateral" : {
+                     "start": 0,
+                     "end": 0
+                 },
+                 "t_dorsum_x" : {
+                     "start": 45,
+                     "end": 45
+                 },
+                 "vm_closure" : {
+                     "start": 90,
+                     "end": 90
+                 },
+                 "eg_closure" : {
+                     "start": 10,
+                     "end": 10
+                 },
+                 "ph_closure" : {
+                     "start": 75,
+                     "end": 75
+                 },
+                 "v_resonance" : {
+                     "start": [710, 1100, 2450],
+                     "end": [710, 1100, 2450]
+                 }
+}}

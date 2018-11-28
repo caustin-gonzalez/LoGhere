@@ -1,0 +1,7 @@
+In order to figure out the phones for a language, define a large number of words manually and then try to train the program on other words.
+
+In order to figure out the scales, we will need 3 diagrams per organ:
+
+At maximum for 100
+At minimum for 0
+At resting for 50

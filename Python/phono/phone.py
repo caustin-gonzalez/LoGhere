@@ -1,7 +1,7 @@
 class Phone(object):
 
     # NTS: There needs to be a way to ingest the values of a phone into a Phone object neatly.
-
+bEp
     def __init__(self,
                  # All keyword arguments are arrays of length 2
                  # Value 0 is the beginning position

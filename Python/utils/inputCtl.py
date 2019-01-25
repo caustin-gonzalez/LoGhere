@@ -6,15 +6,15 @@ class MouseController:
     return self
 
   # Unknown purpose - count the number of touches and how long it's been held down for?
-  master.touches_with_mouse = []
-  master.mouse_touch = {
+  self.touches_with_mouse = []
+  self.mouse_touch = {
     "alive": false,
     "end_time": 0
     }
 
-  # Bind left mouse-click to start_touches button
-  master.bind("<Button-1>",master.start_touches)
+  # Bind left mouse-click to start_touches function
+  master.bind("<Button-1>",self.start_touches)
 
-  # Coordinates of the mouse pointer relative to the root window.
+  # Get coordinates of the mouse pointer relative to the root window.
   master.mouseX = master.winfo_pointerx()
   master.mouseY = master.winfo_pointery()

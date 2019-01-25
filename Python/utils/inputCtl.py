@@ -13,8 +13,29 @@ class MouseController:
     }
 
   # Bind left mouse-click to start_touches function
-  master.bind("<Button-1>",self.start_touches)
+  # Might not be necessary as the 'touchstart' and other 'touch...' event listeners in JS
+  # are only for touchscreens
+  self.bind("<Button-1>",self.start_touches)
+  
+  # The function called when the left mouse click is caught by the listener.
+  # This sets the mouse as down, to allow tracking for how long it is held down.
+  def self.mouse_clickdown(event):
+    self.mouse_down = True
+    self.start_mouse(event)
+    
+  def self.mouse_unclick(event):
+    self.mouse_down = False
+    self.end_mouse(event)
+    
+  def self.start_mouse(event):
+    # wip
+  
+  # Detect when the left mouse button is pressed
+  self.bind("<Button-1>",self.mouse_clickdown(event))
+            
+  # Detect when the left mouse button is released
+  self.bind("<ButtonRelease-1>",self.mouse_unclick(event))
 
   # Get coordinates of the mouse pointer relative to the root window.
-  master.mouseX = master.winfo_pointerx()
-  master.mouseY = master.winfo_pointery()
+  master.mouseX = self.winfo_pointerx()
+  master.mouseY = self.winfo_pointery()

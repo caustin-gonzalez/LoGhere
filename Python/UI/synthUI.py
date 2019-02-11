@@ -6,4 +6,11 @@ class SynthWindow(tkinter.Tk):
         tkinter.Tk.__init__(self, parent)
 
         self.title("LoGhere voice synthesis")
-        self.geometry("600x600")
+
+testWindow = SynthWindow(None)
+
+# Create a canvas
+synthCanvas = tkinter.Canvas(testWindow, bg="white", height=600, width=600)
+synthCanvas.pack()
+
+tkinter.mainloop()

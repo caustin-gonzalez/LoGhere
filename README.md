@@ -7,7 +7,7 @@ placeholder
 
 # Open-source code references
 
-### P I N K   T R O M B O N E
+### Pink Trombone
 
 view-source:https://dood.al/pinktrombone/
 

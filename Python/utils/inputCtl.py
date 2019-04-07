@@ -1,11 +1,19 @@
 import tkinter
 from vsynth.vars import *
+# Import random to generate unique IDs for mouse events
+import random
+# Import pymouse to track the mouse
+import pymouse
 
 class MouseController:
 
   # When a new instance of this class is created, return a reference to self so that functions from it can be called.
   def __new__(self):
     return self
+  
+  def __init__(self):
+    self.mouse_down = False
+    mouse = pymouse.PyMouse()
 
   # Unknown purpose - count the number of touches and how long it's been held down for?
   self.touches_with_mouse = []
@@ -36,9 +44,15 @@ class MouseController:
 
     touch = {}
     touch.startTime = time
+    touch.fricative_intensity = 0
+    touch.end_time = 0
+    touch.alive = True
+    touch.id = "mouse"+str(random.randint())
+    touch.x = mouse.position()[1]
+    touch.y = mouse.position()[2]
 
   def end_mouse(event):
-    # wip
+    #wip
   
   # Detect when the left mouse button is pressed
   self.bind("<Button-1>",self.mouse_clickdown(event))
